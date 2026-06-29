@@ -15,7 +15,7 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     position: sticky;
-    top:0%;
+    top: 0%;
     background-color: white;
     z-index: 1;
 }
@@ -32,7 +32,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-    
+
 }
 
 .navbar__s2 input {
@@ -52,12 +52,16 @@ body {
     align-items: center;
 }
 
-.mylearning{
+.navbar__s4 {
+    display: none;
+}
+
+.mylearning {
     position: relative;
     cursor: pointer;
 }
 
-.mylearning__popup{
+.mylearning__popup {
     position: absolute;
     background-color: white;
     border: solid black 1px;
@@ -68,7 +72,7 @@ body {
     display: none;
 }
 
-.mylearning:hover .mylearning__popup{
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -88,7 +92,7 @@ body {
     border: solid #A435F0 1px;
 }
 
-.categories p:hover{
+.categories p:hover {
     transition: 1s;
     background-color: transparent;
     color: #A435F0;
@@ -96,7 +100,7 @@ body {
 
 }
 
-.sale-image{
+.sale-image {
     position: relative;
 }
 
@@ -104,12 +108,12 @@ body {
     width: 100%;
 }
 
-.sale-image__offer{
+.sale-image__offer {
     width: 35%;
     border: solid black 2px;
     background-color: white;
     padding: 2%;
-    position:absolute;
+    position: absolute;
     top: 10%;
     left: 10%;
     animation-name: zoom;
@@ -118,13 +122,13 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes zoom{
-    0%{
+@keyframes zoom {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: scale(1);
     }
@@ -134,10 +138,6 @@ body {
     padding: 10px;
 }
 
-.recommended p {
-
-    font-size: 25px;
-}
 
 .recommended__container {
     display: flex;
@@ -147,7 +147,9 @@ body {
 }
 
 .course-card {
-    width: 500px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course-card img {
@@ -184,8 +186,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-
-
 }
 
 .footer {
@@ -208,4 +208,37 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:800px){
+
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .course-card {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .categories {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .navbar__s2,.navbar__s3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .navbar__s4 {
+        display: block;
+    }
 }
