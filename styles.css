@@ -174,7 +174,6 @@ body {
     padding: 10px;
     flex-grow: 1;
     flex-basis: 25%;
-
 }
 
 .popular {
@@ -210,35 +209,23 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (max-width:800px){
+    body {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width:600px){
     .course-card {
         flex-basis: 40%;
     }
-}
-
-@media screen and (max-width: 600px){
-
-    .categories {
-        display: none;
-    }
-}
-
-@media screen and (max-width:600px){
-
-    .navbar__s2,.navbar__s3 {
-        display: none;
-    }
-}
-
-@media screen and (max-width:600px){
     .navbar__s4 {
         display: block;
     }
-}
-
-@media screen and (max-width:800px){
-
-    body {
-        font-size: 12px;
+    .navbar__s2,.navbar__s3 {
+        display: none;
+    }
+    .categories {
+        display: none;
     }
 }
