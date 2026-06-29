@@ -210,13 +210,6 @@ body {
     justify-content: space-between;
 }
 
-@media screen and (max-width:800px){
-
-    body {
-        font-size: 12px;
-    }
-}
-
 @media screen and (max-width:600px){
     .course-card {
         flex-basis: 40%;
@@ -240,5 +233,12 @@ body {
 @media screen and (max-width:600px){
     .navbar__s4 {
         display: block;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    body {
+        font-size: 12px;
     }
 }
